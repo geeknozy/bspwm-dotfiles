@@ -1,0 +1,78 @@
+/*
+ * ROFI color theme
+ * User: NOZY
+ * Copyright: *!
+ */
+
+configuration {
+  font: "Terminus 11";
+
+  drun {
+    display-name: "Drun: ";
+  }
+
+  run {
+    display-name: "Run: ";
+  }
+
+  window {
+    display-name: "Window: ";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: #000000;
+  bg-alt: #000000;
+  fg: #FFFFFF;
+  fg-alt: #7f7f7f;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+entry {
+  padding: 6px 0;
+}
+
+prompt {
+  padding: 6px;
+}
+
+listview {
+  lines: 6;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 6px;
+  text-color: @fg-alt;
+}
+
+element-text selected {
+  text-color: @fg;
+}
