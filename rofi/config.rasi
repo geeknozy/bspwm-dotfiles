@@ -1,0 +1,12 @@
+configuration {
+	font: "Terminus 11";
+}
+@theme "dark.rasi"
+
+listview {
+	lines: 6;
+}
+
+window {
+	width: 25%;
+}
