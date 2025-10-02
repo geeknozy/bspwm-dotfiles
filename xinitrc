@@ -53,7 +53,8 @@ fi
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
-feh --bg-scale /home/nozy/Pictures/Wallpapers/0016.jpg
+feh --bg-scale /home/nozy/Pictures/Wallpapers/0014.png
 xsetroot -cursor_name left_ptr
 picom --no-fading-openclose --fade-in-step=1 --fade-out-step=1 --fade-delta=0 &
+xset s off -dpms &
 exec bspwm
